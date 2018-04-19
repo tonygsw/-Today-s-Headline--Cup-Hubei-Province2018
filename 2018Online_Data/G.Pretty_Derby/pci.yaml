@@ -1,0 +1,21 @@
+version: 1
+file:
+- &fac
+  source: std.cpp
+  lang: cpp.gxx11
+- &fchk
+  source: checker.cpp
+  lang: cpp.gxx11
+
+step:
+- name: prepare
+  cmd:
+  - type: compile
+    file: *fchk
+
+- name: AC
+  cmd:
+  - type: judge
+    file: *fac
+    expect:
+    - AC

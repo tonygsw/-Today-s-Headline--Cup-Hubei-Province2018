@@ -1,0 +1,32 @@
+version: 1
+timelimit: 3000
+memorylimit: 512
+name: "A + B Problem"
+
+checker: &fchk
+  source: checker.cpp
+  lang: cpp.gxx11
+
+interactor:
+  source: interactor.cpp
+  lang: cpp.gxx11
+
+case:
+- input: input1
+  output: answer
+- input: input2
+  output: answer
+- input: input3
+  output: answer
+- input: input4
+  output: answer
+- input: input5
+  output: answer
+- input: input6
+  output: answer
+- input: input7
+  output: answer
+- input: input8
+  output: answer
+- input: input9
+  output: answer
